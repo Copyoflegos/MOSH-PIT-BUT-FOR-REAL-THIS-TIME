@@ -7,8 +7,8 @@ public class Song
 {
     //puke
     
-    public  float Tempo;
+    public float Tempo;
     //Set to measure switch as base
-    public float SongSwitchWait = 120;
+    public float SongSwitchWait = 4;
     public GameObject Bullet;
 }

@@ -19,7 +19,7 @@ public class MusicControl : MonoBehaviour
     private void Awake()
     {
         CurrentSong = SongPlaylist[0];
-        print(SongPlaylist.Length);
+        
         Audios[1].volume = 0;
         Audios[2].volume = 0;
         Audios[0].volume = Volume;
