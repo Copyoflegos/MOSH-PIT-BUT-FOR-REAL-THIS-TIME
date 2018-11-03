@@ -306,11 +306,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BulletDamageScript.cs" />
     <Compile Include="Assets\DrumProjectileScript.cs" />
-    <Compile Include="Assets\Scripticious.cs" />
     <Compile Include="Assets\ScriptsR\Enemy\EnemyHitBoxScript.cs" />
-    <Compile Include="Assets\ScriptsR\Enemy\NewEnemy.cs" />
     <Compile Include="Assets\ScriptsR\Enemy\TestEnemyScript.cs" />
     <Compile Include="Assets\ScriptsR\GameControl\Conductor.cs" />
     <Compile Include="Assets\ScriptsR\GameControl\MusicControl.cs" />

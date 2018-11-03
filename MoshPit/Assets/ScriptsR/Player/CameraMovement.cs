@@ -12,8 +12,8 @@ public class CameraMovement : MonoBehaviour
     float HorOffset = 8;
     float VerOffset = 4;
 
-    float VerSize = 2;
-    float HorSize = 4;
+    float VerSize = 0.5f;
+    float HorSize = 0.5f;
 
     [SerializeField]
     LayerMask EdgeMask;
@@ -32,34 +32,39 @@ public class CameraMovement : MonoBehaviour
 
 
 
-
-        if (!LeftCheck && Player.transform.position.x < transform.position.x)
-        {
-            print("Move Left");
-            
-            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(Player.transform.position.x - 0.5f, transform.position.y, -10), ref velocity, lerpSpeed);
-        }
-        if (!RightCheck && Player.transform.position.x > transform.position.x)
-        {
-            print("Move Right");
-            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(Player.transform.position.x + 0.5f, transform.position.y, -10), ref velocity, lerpSpeed);
-
-        }
+        
+       
 
 
-        if (UpCheck)
-        {
-            print("Up");
-        }
-        if (DownCheck)
-        {
-            print("Down");
-        }
-
+        
 
     }
     private void FixedUpdate()
     {
-        
+        if (!LeftCheck && Player.transform.position.x < transform.position.x)
+        {
+            
+
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(Player.transform.position.x , transform.position.y, -10), ref velocity, lerpSpeed);
+        }
+        if (!RightCheck && Player.transform.position.x > transform.position.x)
+        {
+            
+
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(Player.transform.position.x , transform.position.y, -10), ref velocity, lerpSpeed);
+        }
+        if (!UpCheck && Player.transform.position.y > transform.position.y)
+        {
+            
+
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, Player.transform.position.y, -10), ref velocity, lerpSpeed);
+        }
+        if (!DownCheck && Player.transform.position.y < transform.position.y)
+        {
+            
+
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, Player.transform.position.y, -10), ref velocity, lerpSpeed);
+        }
+
     }
 }
