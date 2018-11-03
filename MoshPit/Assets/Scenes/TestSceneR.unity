@@ -162,6 +162,12 @@ Prefab:
       propertyPath: PlayerShooter
       value: 
       objectReference: {fileID: 2030331051}
+    - target: {fileID: 114726406185373578, guid: b38d951b77f718e499191db53709a8cc,
+        type: 2}
+      propertyPath: SongPlaylist.Array.data[0].Bullet
+      value: 
+      objectReference: {fileID: 1865645463269220, guid: f16624757bcecfd4b835f94ac0a5d6d6,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b38d951b77f718e499191db53709a8cc, type: 2}
   m_IsPrefabAsset: 0

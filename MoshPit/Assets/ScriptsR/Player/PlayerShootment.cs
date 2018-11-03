@@ -11,9 +11,11 @@ public class PlayerShootment : MonoBehaviour
     bool SHOOT;
     bool ShootCD;
     float AngleGiven;
+    float DrumsShot;
     private void Awake()
     {
         ShootCD = true;
+        DrumsShot = 0;
     }
     private void Update()
     {
@@ -26,7 +28,25 @@ public class PlayerShootment : MonoBehaviour
 
         if (ShootCD)
         {
-            Instantiate(currentBullet, transform.position, Quaternion.Euler(0,0,AngleGiven));
+            if (currentBullet.gameObject.name == "DrumProjectile")
+            {
+                if (DrumsShot < 3)
+                {
+                    Instantiate(currentBullet, transform.position + new Vector3(screenPos.x / 2, screenPos.y / 2, screenPos.z), Quaternion.Euler(0, 0, AngleGiven));
+                }
+                else
+                {
+                    Instantiate(currentBullet, transform.position + new Vector3(screenPos.x / 2, screenPos.y / 2, screenPos.z), Quaternion.Euler(0, 0, AngleGiven));
+                    Debug.Log("BigBoy");
+                }
+                Debug.Log(DrumsShot);
+                DrumsShot += 1;
+            }
+            else
+            {
+                Instantiate(currentBullet, transform.position, Quaternion.Euler(0, 0, AngleGiven));
+            }
+            if(DrumsShot >= 4) { DrumsShot = 0; }
             ShootCD = false;
             StartCoroutine(ShootCoolDownTimer());
         }
