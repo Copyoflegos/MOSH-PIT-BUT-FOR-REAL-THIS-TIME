@@ -31,12 +31,12 @@ public class MusicControl : MonoBehaviour
         {
             
             CurrentSongID += 1;
-            print(CurrentSongID);
+
         }
         else
         {
             CurrentSongID = 0;
-            print("what");
+           
         }
         
         CurrentSong = SongPlaylist[CurrentSongID];
