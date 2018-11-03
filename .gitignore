@@ -2,3 +2,13 @@
 *.db
 Library/shadercompiler-UnityShaderCompiler.exe0.log
 MoshPit/Temp/UnityLockfile
+*.lock
+MoshPit/.vs/MoshPit/v15/Server/sqlite3/storage.ide
+MoshPit/.vs/MoshPit/v15/Server/sqlite3/storage.ide-shm
+MoshPit/.vs/MoshPit/v15/Server/sqlite3/storage.ide-wal
+MoshPit/ProjectSettings/TagManager.asset
+MoshPit/Temp/UnityVS_obj/Debug/MoshPit.csproj.CoreCompileInputs.cache
+MoshPit/Temp/UnityVS_obj/Debug/Unity.PackageManagerUI.Editor.csproj.CoreCompileInputs.cache
+MoshPit/Temp/UnityVS_obj/Debug/Unity.TextMeshPro.csproj.CoreCompileInputs.cache
+MoshPit/Temp/UnityVS_obj/Debug/Unity.TextMeshPro.Editor.csproj.CoreCompileInputs.cache
+MoshPit/Temp/UnityVS_obj/Debug/UnityEditor.StandardEvents.csproj.CoreCompileInputs.cache
