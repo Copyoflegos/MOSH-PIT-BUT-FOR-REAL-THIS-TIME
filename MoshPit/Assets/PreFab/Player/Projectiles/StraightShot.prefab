@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50516064795330744}
   - component: {fileID: 114028250753358876}
   - component: {fileID: 61830403662898998}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: StraightShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

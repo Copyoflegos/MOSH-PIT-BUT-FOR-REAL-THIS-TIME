@@ -20,7 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4678101324573902}
   - component: {fileID: 212025114433318208}
-  m_Layer: 9
+  - component: {fileID: 114577426991775118}
+  m_Layer: 10
   m_Name: Drum Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114577426991775118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1763141850261534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138ababe6ab4d0b488eee33203029d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathTimer: 0.2
 --- !u!212 &212025114433318208
 SpriteRenderer:
   m_ObjectHideFlags: 1
